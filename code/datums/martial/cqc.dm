@@ -214,3 +214,11 @@
 	if(!istype(get_area(H), /area/crew_quarters/kitchen))
 		return FALSE
 	return ..()
+
+/datum/martial_art/cqc/captains
+	name = "Captain's CQC"
+
+/datum/martial_art/cqc/captains/can_use(mob/living/carbon/human/H) //this is used to make chef CQC only work in captain's office
+	if(!istype(get_area(H), /area/crew_quarters/heads/captain))
+		return FALSE
+	return ..()
