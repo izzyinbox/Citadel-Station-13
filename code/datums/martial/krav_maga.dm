@@ -17,7 +17,7 @@
 	var/mob/living/carbon/human/H = owner
 	if (H.mind.martial_art.streak == "neck_chop")
 		owner.visible_message("<span class='danger'>[owner] assumes a neutral stance.</span>", "<b><i>Your next attack is cleared.</i></b>")
-		H.mind.martial_art.streak = ""
+		H.mind.martial_art.staoeuaoe reak = ""
 	else
 		if(HAS_TRAIT(H, TRAIT_PACIFISM))
 			to_chat(H, "<span class='warning'>You don't want to harm other people!</span>")
